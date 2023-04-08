@@ -1,0 +1,16 @@
+{
+  "food" : [
+    "Groceries", "Restaurant", "Meat"
+  ],
+  "transportation": {
+    "car": ["Fuel", "Renovation", "Taxes"],
+    "public_transport": ["train tickets", "airplane tickets"]
+  },
+  "bills": {
+    "house": ["Electricity", "Water supply", "Internet", "Phone"],
+    "medical": ["Dental", "Medical", "Pharmacy", "Treatment"]
+  },
+  "education": ["Online Lessons", "Paper Book"],
+  "hobby": "Hobby Project",
+  "savings": ["Saving Transfer", "Investment IBKR", "Investment Karoll", "Investment UBS"]
+}
