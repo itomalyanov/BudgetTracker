@@ -41,3 +41,30 @@ Implement user interface: The user interface is what allows users to interact wi
 Test and debug your code: Thoroughly test your code to ensure that it works as expected, and fix any bugs or errors that you encounter.
 
 Overall, designing a budget app using OOP requires careful consideration of the entities and behaviors involved in budgeting, and the creation of well-structured classes and methods to handle these entities.
+
+
+-----------
+
+To create a REST API, here are some prerequisites you should consider:
+
+Understanding of HTTP: A REST API is built on top of the HTTP protocol. Understanding how HTTP works is crucial for building a REST API.
+
+Understanding of RESTful architecture: REST stands for Representational State Transfer. RESTful architecture is a set of design principles for building scalable, reliable, and maintainable web services. Understanding these principles is necessary for building a REST API.
+
+Knowledge of a programming language: You need to choose a programming language for building a REST API. Popular choices are Python, Node.js, Ruby, Java, and PHP.
+
+Familiarity with a web framework: A web framework simplifies the development of a REST API by providing features like routing, request handling, and response generation. Some popular web frameworks for building REST APIs are Flask, Django, Express.js, Ruby on Rails, and Laravel.
+
+Database knowledge: REST APIs often require database integration for storing and retrieving data. Understanding of a database management system such as MySQL, PostgreSQL, or MongoDB is necessary.
+
+Security: REST APIs often deal with sensitive data, and it is crucial to ensure that the API is secure. Knowledge of security best practices such as authentication, authorization, encryption, and input validation is necessary.
+
+Testing: A REST API must be thoroughly tested to ensure that it functions correctly and meets the requirements. Knowledge of testing frameworks such as pytest, Jasmine, or JUnit is necessary.
+
+Documentation: A REST API should be well documented, and the documentation should be easily accessible to developers who want to use the API. Knowledge of documentation tools such as Swagger, Postman, or ReDoc is necessary.
+
+By understanding these prerequisites, you will be well equipped to create a REST API.
+
+
+
+asprice: http://asprise.com/receipt-ocr/blog-github-python-receipt-ocr-api-library-free-example-code-open-source
