@@ -1,4 +1,5 @@
 import datetime
+from utils.оperational import import_csv
 
 
 class Expense:
@@ -15,7 +16,15 @@ class Expense:
     def deposit(self):
         pass
 
-    pass
+    def import_expense_list(self):
+        pass
+
+
+    def add_expense(self, date, description, category, amount):
+        pass
+
+
+
 
 
 class Income:
