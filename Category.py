@@ -14,7 +14,28 @@ class Category:
         with open('categories.csv', 'r') as file:
             self.categories = pd.DataFrame(data=file, header=True)
 
-    def compare_existing(self, series):
+        self.new_categories = []
+
+    def compare_existing(self, from_import, auto_import = 0):
+        """
+        Function to compare the existing categories (already in categories.csv file) with the ones used in the imported file.
+        If there are new categories found add them to a series object to append to the file.
+        :param auto_import:
+        :param from_import:
+        :return:
+        """
+        set_import = set(from_import)
+        set_existing = set(self.categories['name'])
+
+        if set_import.issubset(set_existing):
+            print("it's fine")
+        else:
+            self.new_categories = (set_import - set_existing)
+            print ("new categories has to be added")
+            if auto_import == 1:
+                for category in self.new_categories:
+                    print(f"Import new category {category}")
+
         pass
 
     def check_existing_category(self):
