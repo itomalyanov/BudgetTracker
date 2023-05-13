@@ -1,0 +1,4 @@
+|id|name|description|parent|date|is_active|
+|1|income|received amount||13/05/2023|True|
+|2|expense|spend money||13/05/2023|True|
+|3|transfer|transfer form one place to another||13/05/2023|True|

@@ -1,7 +1,6 @@
-
-def import_csv(path):
-    with open(path, 'r') as file:
-        return file.readlines()
+import pandas as pd
 
 
-
+def load_csv(path):
+    """ :returns Pandas DataFrame"""
+    return pd.DataFrame(path)

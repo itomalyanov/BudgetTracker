@@ -1,16 +1,21 @@
 import json
+import pandas as pd
+
+
 class Category:
     """
     Separate class for categories. Still not sure why it has been created.
+
+    On a new instance it's reading the categories.csv files and loads the existing categories to a list.
+    New categories must be loaded for each new file with expenses.
     """
 
     def __init__(self):
-        self.category = None
-        file = open('CategoriesList.json')
-        cat_list = json.load(file)
+        with open('categories.csv', 'r') as file:
+            self.categories = pd.DataFrame(data=file, header=True)
 
-    def set_category(self, category):
-        self.category = category
+    def compare_existing(self, series):
+        pass
 
     def check_existing_category(self):
         """
@@ -18,6 +23,27 @@ class Category:
         the set_category method of the Category class.
         :return:  Does not return anything
         """
+        pass
+
+    def add_category(self, parent, category_name, date):
+        """
+        Accept pandas dataframe row.
+        Validate if the minimum required data is present.
+        Check for duplicates, and add the new category to the file
+        :param parent:
+        :param category_name:
+        :param date:
+        :return:
+        """
+        pass
+
+    def edit_category(self):
+        pass
+
+    def save_category(self):
+        pass
+
+    def delete_category(self):
         pass
 
 
