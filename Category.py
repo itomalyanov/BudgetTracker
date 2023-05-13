@@ -31,29 +31,22 @@ class Category:
             print("it's fine")
         else:
             self.new_categories = (set_import - set_existing)
-            print ("new categories has to be added")
+            print("new categories has to be added")
             if auto_import == 1:
                 for category in self.new_categories:
                     print(f"Import new category {category}")
 
         pass
 
-    def check_existing_category(self):
-        """
-        Check if provided category already exist! If the category does not exist in the list It's calling
-        the set_category method of the Category class.
-        :return:  Does not return anything
-        """
-        pass
-
-    def add_category(self, parent, category_name, date):
+    def add_category(self, name: str, description: str = None, parent: int = None):
         """
         Accept pandas dataframe row.
         Validate if the minimum required data is present.
         Check for duplicates, and add the new category to the file
+        :param description:
+        :type name: object
         :param parent:
-        :param category_name:
-        :param date:
+        :param name:
         :return:
         """
         pass
