@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# uv / venv
+.venv/
+uv.lock.bak
+
+# Databases
+*.duckdb
+*.duckdb.wal
+
+# IDE / notebooks
+.idea/
+.ipynb_checkpoints/
+*.ipynb
+
+# Real bank statement exports — contain personal financial data, never commit
+Reports/

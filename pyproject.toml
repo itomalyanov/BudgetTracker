@@ -1,0 +1,39 @@
+[project]
+name = "budget-tracker"
+version = "0.1.0"
+description = "Personal budget tracking and analysis library"
+readme = "README.md"
+authors = [
+    { name = "Ilian Tomalyanov", email = "i.tomalyanov@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "pandas>=3.0.5",
+    "pytest>=8",
+    "pytest-cov>=5",
+    "ruff>=0.6",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+# DTZ: bank-statement dates carry no timezone info in the source data — naive
+# dates/datetimes are intentional here, not an oversight.
+ignore = ["DTZ"]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
